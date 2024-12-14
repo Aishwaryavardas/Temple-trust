@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';
-import AboutUs from './AboutUs';
-import Services from './Services';
-import PoojaServices from './PoojaServices';
-import DailyRituals from './DailyRituals';
-import CommunityPrograms from './CommunityPrograms';
-import Donate from './Donate'; // Import Donate component
-import ThankYou from './ThankYou'; // Import the ThankYou page
-import Gallery from './Gallery';
-import Navbar from './Navbar';
+import HomePage from './pages/HomePage';
+import AboutUs from './pages/AboutUs';
+import Services from './pages/Services';
+import PoojaServices from './pages/PoojaServices';
+import DailyRituals from './pages/DailyRituals';
+import CommunityPrograms from './pages/CommunityPrograms';
+import Donate from './pages/Donate'; // Import Donate component
+import ThankYou from './pages/ThankYou'; // Import the ThankYou page
+import Gallery from './pages/Gallery';
+import Navbar from './pages/Navbar';
 import './App.css';
 
 const App = () => {
