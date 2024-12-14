@@ -1,0 +1,279 @@
+/* General Styling */
+body {
+  background-color: #d1a4a4;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.donation-page {
+  padding: 30px;
+}
+
+/* Banner Section */
+.banner {
+  background-color: #b390d8;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.banner h1 {
+  font-size: 36px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.why-donate {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: #d7d3dd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(9, 9, 9, 0.1);
+  transform: translateY(20px);
+  animation: slideIn 1s ease-out forwards;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-donate:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #c0b0d4; /* Subtle background color change */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for hover */
+  color: #2c3e50; /* Optional text color adjustment */
+}
+
+
+.why-donate h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.why-donate p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #0d0f12;
+}
+
+.why-donate ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-donate li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #444949;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Added transition for background and color */
+}
+
+.why-donate li:hover {
+  color: #2980b9; /* Highlight color */
+  background-color: #dfe6e9; /* Light background color change on hover */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Donation Methods */
+.donation-methods {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.donation-methods p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #34495e; /* Subtle text color */
+}
+
+.methods {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.method {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(2, 2, 2, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease;
+  color: #2c3e50; /* Default text color */
+}
+
+.method:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #d4bfe6;
+  color: #1a5276; /* Text color change on hover */
+}
+
+.donate-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+  background-color: #171515;
+}
+
+/* Modal Styling */
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* How Donations Are Used Section */
+.donation-usage {
+  background-color: #f3f4f6;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-usage:hover {
+  transform: scale(1.05);
+  background-color: #fbfbfb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.donation-usage h2 {
+  color: #2c3e50; /* Section title text color */
+}
+
+.donation-usage p {
+  color: #636e72; /* Default paragraph text color */
+}
+
+.usage-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.usage-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #2c3e50; /* Default text color */
+}
+
+.usage-item:hover {
+  transform: scale(1.05);
+  background-color: #cec1dd;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: #1a5276; /* Text color change on hover */
+}
+
+/* Save the Temple Section */
+.save-temple-section {
+  background-color: #e8f0fe;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.save-temple-section h2 {
+  color: #2c3e50; /* Section title color */
+}
+
+.save-temple-section p {
+  color: #7f8c8d; /* Paragraph text color */
+}
+
+.save-temple-section:hover {
+  transform: scale(1.05);
+  background-color: #d9e8fb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* General Animation for Sequential Load */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Animation to Sections */
+.banner,
+.why-donate,
+.donation-methods,
+.donation-usage,
+.save-temple-section {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Add Delays for Sequential Effect */
+.banner {
+  animation-delay: 0.3s;
+}
+
+.why-donate {
+  animation-delay: 0.6s;
+}
+
+.donation-methods {
+  animation-delay: 0.9s;
+}
+
+.donation-usage {
+  animation-delay: 1.2s;
+}
+
+.save-temple-section {
+  animation-delay: 1.5s;
+}
+

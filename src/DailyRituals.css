@@ -1,0 +1,137 @@
+.daily-rituals {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 40px;
+}
+
+.rituals-header {
+  background-color: #b390d8;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.2em; /* Reduced heading size */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInHeader 1s ease-out;
+}
+
+.rituals-header h1 {
+  margin: 0;
+}
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rituals-timings {
+  margin-top: 40px;
+}
+
+.ritual-block {
+  background-color: #f8f8f8;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: scaleIn 1s ease-out;
+}
+
+.ritual-block.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.ritual-block:hover {
+  background-color: #a7aceb; /* Green background on hover */
+  cursor: pointer;
+}
+
+.ritual-block:hover h2 {
+  color: white; /* White text color on hover for h2 */
+}
+
+.ritual-block:hover h3 {
+  color: #f1f1f1; /* Light gray text for h3 on hover */
+}
+
+.ritual-block:hover p {
+  color: #dfe6e9; /* Light gray text for paragraph on hover */
+}
+
+.ritual-block h2 {
+  color: #2c3e50;
+  font-size: 1.6em; /* Reduced heading size */
+  transition: all 0.3s ease;
+}
+
+.ritual-block h3 {
+  color: #080808;
+  font-size: 1.3em; /* Reduced subheading size */
+  transition: all 0.3s ease;
+}
+
+.ritual-block p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.ritual-note {
+  background-color: rgb(103, 144, 213);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ritual-note:hover {
+  background-color: rgb(233, 117, 100); /* Change the background of the note section on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .rituals-header {
+    font-size: 2em;
+  }
+
+  .ritual-block {
+    padding: 15px;
+  }
+
+  .ritual-note {
+    font-size: 1em;
+  }
+}

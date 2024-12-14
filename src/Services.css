@@ -1,0 +1,109 @@
+/* Header Styling for the Services Section */
+.services-header {
+  background-color: #b390d8; /* Background color for the header */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Padding to add space around the header */
+  text-align: center; /* Center align the header text */
+}
+
+.services-header h1 {
+  font-size: 2.5em; /* Increase the font size of the heading */
+  margin: 0; /* Remove default margin */
+  font-weight: bold; /* Make the heading bold */
+}
+
+/* Animation for fade-in and slide-up */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Applying animation to the services section */
+.service-card {
+  display: flex; /* Flex container for horizontal layout */
+  align-items: center; /* Center align image and text vertically */
+  margin-bottom: 40px; /* Space between cards */
+  opacity: 0; /* Initially invisible */
+  animation: fadeInSlideUp 0.8s ease-out forwards; /* Fade and slide-in effect */
+  animation-delay: 0.3s; /* Delay before the animation starts */
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.6s; /* Slight delay for the second card */
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.9s; /* Slight delay for the third card */
+}
+
+/* Styling for the service image */
+.service-image {
+  width: 300px; /* Adjusted size */
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Styling for the service info */
+.service-info {
+  flex: 1; /* Take the remaining horizontal space */
+}
+
+.service-info h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.service-info p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Learn more link styling */
+.learn-more {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+  color: #388E3C;
+}
+/* Add hover effect for service cards with pop-up effect */
+.service-card:hover {
+  background-color: #f0e1f7; /* Change background color on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for the color and scale */
+  transform: scale(1.05); /* Slightly increase the size of the card */
+}
+
+/* Optional: Hover effect on the service title */
+.service-info h2:hover {
+  color: #b390d8; /* Change color of the title on hover */
+  transition: color 0.3s ease;
+}
+
+/* Optional: Hover effect on the learn more link */
+.learn-more:hover {
+  color: #388E3C; /* Green color on hover */
+  transition: color 0.3s ease;
+}
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}

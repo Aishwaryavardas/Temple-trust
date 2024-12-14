@@ -1,0 +1,99 @@
+/* Gallery Page Styles */
+.gallery-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Updated text color for the heading */
+}
+
+.gallery-page p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #7f8c8d; /* Updated text color for the subheading */
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 20px;
+}
+
+.gallery-grid .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Slide up effect */
+  animation: fadeInSlideUp 0.8s ease-out forwards; /* Apply animation */
+}
+
+.gallery-grid .gallery-item:nth-child(1) {
+  animation-delay: 0.2s; /* Delay for the 1st item */
+}
+
+.gallery-grid .gallery-item:nth-child(2) {
+  animation-delay: 0.4s; /* Delay for the 2nd item */
+}
+
+.gallery-grid .gallery-item:nth-child(3) {
+  animation-delay: 0.6s; /* Delay for the 3rd item */
+}
+
+.gallery-grid .gallery-item:nth-child(4) {
+  animation-delay: 0.8s; /* Delay for the 4th item */
+}
+
+.gallery-grid .gallery-item:nth-child(5) {
+  animation-delay: 1s; /* Delay for the 5th item */
+}
+
+/* Add more nth-child selectors if needed for more items */
+
+/* Image Styling */
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Description Styling */
+.gallery-item .description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .description {
+  opacity: 1; /* Show text on hover */
+}
+
+/* Fade In and Slide Up Animation */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+}
